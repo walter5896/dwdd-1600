@@ -1,0 +1,302 @@
+/* preent problems with different browsers*/
+* {box-sizing: border-box;}
+/* General body styles */
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    font-family: 'UnifrakturCook', cursive; /* Change to Old English font */
+    background-color: #5f43b2;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 0vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #fefdfd;
+    font-size: 2.5rem;
+    font-family: 'UnifrakturCook', cursive; /* Change to Old English font */
+}
+
+header p {
+    margin: 0;
+    color: #fefdfd;
+    font-size: 1.22rem;
+    letter-spacing: 2px;
+}
+
+/* small screens */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center; 
+        border-bottom: solid 1px #aaa;
+        color: #3a3153;
+    }
+    nav .active a{
+        background-color: #3a3153;
+        background-image: linear-gradient(to bottom,#04c033, #005b18);
+        color: white;
+    }
+    
+   
+    
+    
+}/* BIG SCREENS*/
+ /* end of media query*/
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #3a3153; /* Keeping the original dark navigation background */
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav a {
+        display: block;
+        padding: .95rem 1rem .83rem 1rem;
+        font-size: .8rem;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    nav .active a {
+        background-color: #005b18; /* Active link color */
+        color: #ffffff;
+        
+    }
+    
+    nav a:hover {
+        background-color: #605f5f; /* Hover color */
+    }
+
+} /* end of media query*/
+
+
+/* Main content styles */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #005b18; /* Heading color */
+    font-size: 2.5rem;
+    margin: .5rem 0 .8rem 0;
+}
+
+main h2 {
+    color: #5f43b2; /* Subheading color */
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .8rem 0;
+    line-height: 150%;
+}
+
+main a {
+    color: #9c3335;
+}
+
+.wowhero {
+    width: 100%;
+    margin: 0;
+}
+.wowhero img {
+    width: 100%;
+    height: auto;
+
+}
+/* Image Wrapping */
+.wrapimage {
+    width: 50%;
+    margin: 0;
+    float: right;
+    margin-left: 2vw;
+}
+
+.wrapimage img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapimage figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+/* Form styles */
+.myForm fieldset {
+    border: 1px solid #3a3153;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #3a3153;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, 
+.myForm select, 
+.myForm [type=text], 
+.myForm [type=tel], 
+.myForm [type=email], 
+.myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], 
+.myForm [type=tel], 
+.myForm [type=email], 
+.myForm select, 
+.myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #005b18;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+/* Footer styles */
+footer {
+    border-top: solid #ccc 2px;
+    text-align: center;
+    color: #3a3153;
+    font-size: .7rem;
+    padding: 1rem 0;
+    clear: both;
+}
+
+footer a {
+    color: #3a3153;
+}
+
+/* Gallery Styles */
+div.gallery figure img {
+    width: 100%;
+    height: auto;
+    /* Add box-shadow to each image */
+    
+}
+div.gallery figure img:hover {
+    box-shadow: 0px 0px 10px black; /* Add this line */
+
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #012e01;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+    
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* Main content specific to guides, classes */
+main ol {
+    background-color: #eaeaea;
+}
+
+main dl dt {
+    color: #f20519;
+    font-weight: 700;
+}
+
+main dl dd {
+    color: #3a3153;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    color: #b64e11;
+}
+
+main a:hover {
+    background-color: #eee;
+}
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}

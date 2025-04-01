@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Statmegood - WoW PvP Guides and Stats for Competitive Players." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="statmegood.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <title>Statmegood - WoW PvP Guides</title>
+</head>
+
+<body>
+    <!-- start the page header -->
+    
+    <header>
+        <img src="images/logo.png" alt="site logo" width="100" height="70">
+        <div>
+         <h1>StatMeGood</h1>
+         <p>WoW PvP Guide</p>
+     </div>
+     </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Top Classes</a></li>
+            <li><a href="guides.html">PvP Guides</a></li>
+            <li class="active"><a href="form.html">PvP Preferences Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+        <h1>PvP Preferences Form</h1>
+        <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+                <legend>Player Information</legend>
+                <label>First Name: <input type="text" name="first_name" required></label>
+                <label>Last Name: <input type="text" name="last_name" required></label>
+                <label>Email: <input type="email" name="email" required></label>
+                <label>Phone: <input type="tel" name="phone" required placeholder="999-555-1212"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred PvP Modes</legend>
+                <label><input type="checkbox" name="pvp_mode" value="2v2">2v2 Arena</label>
+                <label><input type="checkbox" name="pvp_mode" value="3v3">3v3 Arena</label>
+                <label><input type="checkbox" name="pvp_mode" value="battleground">Battleground</label>
+                <label><input type="checkbox" name="pvp_mode" value="duel">Duel</label>
+            </fieldset>
+
+            
+            <!-- Replace "Preferred PvP Faction" with "Preferred Faction" dropdown -->
+            <fieldset>
+                <legend>Preferred Faction</legend>
+                <label>Preferred Faction:
+                    <select name="faction">
+                        <option value="none">Select a Faction</option>
+                        <option value="horde">Horde</option>
+                        <option value="alliance">Alliance</option>
+                        <option value="both">Both</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Class Preferences</legend>
+                <!-- Death Knight -->
+                <label><input type="checkbox" name="death_knight_blood" value="death_knight_blood">Death Knight - Blood (Tank)</label>
+                <label><input type="checkbox" name="death_knight_frost" value="death_knight_frost">Death Knight - Frost (DPS)</label>
+                <label><input type="checkbox" name="death_knight_unholy" value="death_knight_unholy">Death Knight - Unholy (DPS)</label>
+                
+                <!-- Demon Hunter -->
+                <label><input type="checkbox" name="demon_hunter_havoc" value="demon_hunter_havoc">Demon Hunter - Havoc (DPS)</label>
+                <label><input type="checkbox" name="demon_hunter_vengeance" value="demon_hunter_vengeance">Demon Hunter - Vengeance (Tank)</label>
+                
+                <!-- Druid -->
+                <label><input type="checkbox" name="druid_balance" value="druid_balance">Druid - Balance (Ranged DPS)</label>
+                <label><input type="checkbox" name="druid_feral" value="druid_feral">Druid - Feral (Melee DPS)</label>
+                <label><input type="checkbox" name="druid_guardian" value="druid_guardian">Druid - Guardian (Tank)</label>
+                <label><input type="checkbox" name="druid_restoration" value="druid_restoration">Druid - Restoration (Healer)</label>
+                
+                <!-- Hunter -->
+                <label><input type="checkbox" name="hunter_beast_mastery" value="hunter_beast_mastery">Hunter - Beast Mastery (DPS)</label>
+                <label><input type="checkbox" name="hunter_marksmanship" value="hunter_marksmanship">Hunter - Marksmanship (DPS)</label>
+                <label><input type="checkbox" name="hunter_survival" value="hunter_survival">Hunter - Survival (DPS)</label>
+                
+                <!-- Mage -->
+                <label><input type="checkbox" name="mage_arcane" value="mage_arcane">Mage - Arcane (Ranged DPS)</label>
+                <label><input type="checkbox" name="mage_fire" value="mage_fire">Mage - Fire (Ranged DPS)</label>
+                <label><input type="checkbox" name="mage_frost" value="mage_frost">Mage - Frost (Ranged DPS)</label>
+                
+                <!-- Monk -->
+                <label><input type="checkbox" name="monk_brewmaster" value="monk_brewmaster">Monk - Brewmaster (Tank)</label>
+                <label><input type="checkbox" name="monk_windwalker" value="monk_windwalker">Monk - Windwalker (DPS)</label>
+                <label><input type="checkbox" name="monk_mistweaver" value="monk_mistweaver">Monk - Mistweaver (Healer)</label>
+                
+                <!-- Paladin -->
+                <label><input type="checkbox" name="paladin_protection" value="paladin_protection">Paladin - Protection (Tank)</label>
+                <label><input type="checkbox" name="paladin_retribution" value="paladin_retribution">Paladin - Retribution (DPS)</label>
+                <label><input type="checkbox" name="paladin_holy" value="paladin_holy">Paladin - Holy (Healer)</label>
+                
+                <!-- Priest -->
+                <label><input type="checkbox" name="priest_discipline" value="priest_discipline">Priest - Discipline (Healer)</label>
+                <label><input type="checkbox" name="priest_holy" value="priest_holy">Priest - Holy (Healer)</label>
+                <label><input type="checkbox" name="priest_shadow" value="priest_shadow">Priest - Shadow (DPS)</label>
+                
+                <!-- Rogue -->
+                <label><input type="checkbox" name="rogue_assassination" value="rogue_assassination">Rogue - Assassination (DPS)</label>
+                <label><input type="checkbox" name="rogue_outlaw" value="rogue_outlaw">Rogue - Outlaw (DPS)</label>
+                <label><input type="checkbox" name="rogue_subtlety" value="rogue_subtlety">Rogue - Subtlety (DPS)</label>
+                
+                <!-- Shaman -->
+                <label><input type="checkbox" name="shaman_elemental" value="shaman_elemental">Shaman - Elemental (Ranged DPS)</label>
+                <label><input type="checkbox" name="shaman_enhancement" value="shaman_enhancement">Shaman - Enhancement (Melee DPS)</label>
+                <label><input type="checkbox" name="shaman_restoration" value="shaman_restoration">Shaman - Restoration (Healer)</label>
+                
+                <!-- Warlock -->
+                <label><input type="checkbox" name="warlock_affliction" value="warlock_affliction">Warlock - Affliction (DPS)</label>
+                <label><input type="checkbox" name="warlock_demonology" value="warlock_demonology">Warlock - Demonology (DPS)</label>
+                <label><input type="checkbox" name="warlock_destruction" value="warlock_destruction">Warlock - Destruction (DPS)</label>
+                
+                <!-- Warrior -->
+                <label><input type="checkbox" name="warrior_arms" value="warrior_arms">Warrior - Arms (DPS)</label>
+                <label><input type="checkbox" name="warrior_fury" value="warrior_fury">Warrior - Fury (DPS)</label>
+                <label><input type="checkbox" name="warrior_protection" value="warrior_protection">Warrior - Protection (Tank)</label>
+                
+                <!-- Evoker -->
+                <label><input type="checkbox" name="evoker_devastation" value="evoker_devastation">Evoker - Devastation (Ranged DPS)</label>
+                <label><input type="checkbox" name="evoker_preservation" value="evoker_preservation">Evoker - Preservation (Healer)</label>
+            </fieldset>
+
+            <label>Comments:<textarea name="comments"></textarea></label>
+
+            <input type="submit" value="Submit Preferences">
+        </form>
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;2025 Statmegood &bull; Walter Blundell &bull; <a href="mailto:wbblundell333@gmail.com">Email Me</a></p>
+    </footer>
+</body>
+
+</html>
